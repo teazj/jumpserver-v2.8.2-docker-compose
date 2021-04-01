@@ -1,0 +1,514 @@
+
+2021-04-01 14:51:39 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:52:09 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:52:39 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:53:24 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:53:51 [ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: 身份认证信息未提供。
+
+2021-04-01 14:53:54 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:54:24 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:54:54 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:55:24 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:55:54 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:56:24 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:56:54 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:57:24 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:57:54 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:58:24 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 14:58:54 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 15:09:49 [ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+
+2021-04-01 15:12:14 [ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: 身份认证信息未提供。
+
+2021-04-01 15:35:57 [ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 77, in authenticate
+    return self.authenticate_credentials(
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 86, in authenticate_credentials
+    raise exceptions.AuthenticationFailed(_('Invalid signature.'))
+rest_framework.exceptions.AuthenticationFailed: Invalid signature.
+
+2021-04-01 15:35:58 [ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 77, in authenticate
+    return self.authenticate_credentials(
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 86, in authenticate_credentials
+    raise exceptions.AuthenticationFailed(_('Invalid signature.'))
+rest_framework.exceptions.AuthenticationFailed: Invalid signature.
+
+2021-04-01 15:35:58 [ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 77, in authenticate
+    return self.authenticate_credentials(
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 86, in authenticate_credentials
+    raise exceptions.AuthenticationFailed(_('Invalid signature.'))
+rest_framework.exceptions.AuthenticationFailed: Invalid signature.
+
+2021-04-01 15:35:58 [ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 77, in authenticate
+    return self.authenticate_credentials(
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 86, in authenticate_credentials
+    raise exceptions.AuthenticationFailed(_('Invalid signature.'))
+rest_framework.exceptions.AuthenticationFailed: Invalid signature.
+
+2021-04-01 15:35:58 [ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 77, in authenticate
+    return self.authenticate_credentials(
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 86, in authenticate_credentials
+    raise exceptions.AuthenticationFailed(_('Invalid signature.'))
+rest_framework.exceptions.AuthenticationFailed: Invalid signature.

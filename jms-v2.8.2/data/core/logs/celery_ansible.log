@@ -1,0 +1,152 @@
+Traceback (most recent call last):
+  File "/usr/local/bin/celery", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/site-packages/celery/__main__.py", line 16, in main
+    _main()
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 322, in main
+    cmd.execute_from_commandline(argv)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 495, in execute_from_commandline
+    super(CeleryCommand, self).execute_from_commandline(argv)))
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 305, in execute_from_commandline
+    return self.handle_argv(self.prog_name, argv[1:])
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 487, in handle_argv
+    return self.execute(command, argv)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 415, in execute
+    return cls(
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/worker.py", line 223, in run_from_argv
+    return self(*args, **options)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 253, in __call__
+    ret = self.run(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/worker.py", line 253, in run
+    worker = self.app.Worker(
+  File "/usr/local/lib/python3.8/site-packages/celery/worker/worker.py", line 96, in __init__
+    self.app.loader.init_worker()
+  File "/usr/local/lib/python3.8/site-packages/celery/loaders/base.py", line 114, in init_worker
+    self.import_default_modules()
+  File "/usr/local/lib/python3.8/site-packages/celery/loaders/base.py", line 108, in import_default_modules
+    raise response
+  File "/usr/local/lib/python3.8/site-packages/celery/utils/dispatch/signal.py", line 288, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 84, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 122, in validate_models
+    self.django_setup()
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 118, in django_setup
+    django.setup()
+  File "/usr/local/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 83, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 70, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 196, in __init__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.
+Traceback (most recent call last):
+  File "/usr/local/bin/celery", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/site-packages/celery/__main__.py", line 16, in main
+    _main()
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 322, in main
+    cmd.execute_from_commandline(argv)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 495, in execute_from_commandline
+    super(CeleryCommand, self).execute_from_commandline(argv)))
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 305, in execute_from_commandline
+    return self.handle_argv(self.prog_name, argv[1:])
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 487, in handle_argv
+    return self.execute(command, argv)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 415, in execute
+    return cls(
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/worker.py", line 223, in run_from_argv
+    return self(*args, **options)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 253, in __call__
+    ret = self.run(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/worker.py", line 253, in run
+    worker = self.app.Worker(
+  File "/usr/local/lib/python3.8/site-packages/celery/worker/worker.py", line 96, in __init__
+    self.app.loader.init_worker()
+  File "/usr/local/lib/python3.8/site-packages/celery/loaders/base.py", line 114, in init_worker
+    self.import_default_modules()
+  File "/usr/local/lib/python3.8/site-packages/celery/loaders/base.py", line 108, in import_default_modules
+    raise response
+  File "/usr/local/lib/python3.8/site-packages/celery/utils/dispatch/signal.py", line 288, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 84, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 122, in validate_models
+    self.django_setup()
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 118, in django_setup
+    django.setup()
+  File "/usr/local/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 83, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 70, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 196, in __init__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:32: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is 0 or x is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:32: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is 0 or x is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:34: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif y is 0 or y is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:34: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif y is 0 or y is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:260: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if original_result is 0:
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/_upload_chunking.py:403: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if n is 0 or self._buffer.closed:
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/baseblobservice.py:1008: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if lease_duration is not -1 and \
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/baseblobservice.py:2607: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if lease_duration is not -1 and \
+/usr/local/lib/python3.8/site-packages/azure/storage/common/_connection.py:82: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  self.protocol = self.protocol if parsed_url.scheme is '' else parsed_url.scheme
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:800: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(RuntimeWarning(ROOT_DISCOURAGED.format(
+Connected to redis://:**@redis:6379/3
+mingle: searching for neighbors
+mingle: all alone
+ansible@zabbix ready.
+Received task: assets.tasks.admin_user_connectivity.test_admin_user_connectivity_period[428e50a8-5c6f-4f7a-9e42-96a98fcd26a7]  
+Task assets.tasks.admin_user_connectivity.test_admin_user_connectivity_period[428e50a8-5c6f-4f7a-9e42-96a98fcd26a7] succeeded in 0.004184655845165253s: None
+Events of group {task} enabled by remote.
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:32: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is 0 or x is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:32: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is 0 or x is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:34: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif y is 0 or y is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:34: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif y is 0 or y is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:260: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if original_result is 0:
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/_upload_chunking.py:403: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if n is 0 or self._buffer.closed:
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/baseblobservice.py:1008: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if lease_duration is not -1 and \
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/baseblobservice.py:2607: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if lease_duration is not -1 and \
+/usr/local/lib/python3.8/site-packages/azure/storage/common/_connection.py:82: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  self.protocol = self.protocol if parsed_url.scheme is '' else parsed_url.scheme
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:800: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(RuntimeWarning(ROOT_DISCOURAGED.format(
+Connected to redis://:**@redis:6379/3
+mingle: searching for neighbors
+mingle: all alone
+ansible@zabbix ready.
+Events of group {task} enabled by remote.

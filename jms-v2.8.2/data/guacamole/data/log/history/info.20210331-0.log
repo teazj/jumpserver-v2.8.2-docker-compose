@@ -1,0 +1,131 @@
+2021-03-31 14:29:25,565 [main] INFO  o.a.g.environment.LocalEnvironment 124 - GUACAMOLE_HOME is "/config/guacamole".
+2021-03-31 14:29:25,655 [main] INFO  o.a.g.rest.auth.HashTokenSessionMap 90 - Sessions will expire after 60 minutes of inactivity.
+2021-03-31 14:29:25,936 [main] INFO  o.a.g.environment.LocalEnvironment 124 - GUACAMOLE_HOME is "/config/guacamole".
+2021-03-31 14:29:26,148 [main] INFO  o.a.g.a.j.r.JumpserverRegisterService 102 - Key文件不存在
+2021-03-31 14:29:26,161 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:26,163 [Thread-6] INFO  o.a.g.a.j.r.JumpserverRegisterService 236 - 等待心跳，AccessKey验证未通过
+2021-03-31 14:29:26,212 [Thread-8] INFO  o.a.g.a.j.s.JumpserverSessionService 47 - 开始处理Session队列
+2021-03-31 14:29:26,213 [main] INFO  o.a.g.extension.ExtensionModule 494 - Extension "JumpServer Authentication" loaded.
+2021-03-31 14:29:26,221 [main] INFO  o.a.g.environment.LocalEnvironment 124 - GUACAMOLE_HOME is "/config/guacamole".
+2021-03-31 14:29:26,226 [Thread-9] INFO  o.a.g.a.j.session.RecordService 318 - 开始扫重传录像
+2021-03-31 14:29:26,227 [Thread-9] INFO  o.a.g.a.j.session.RecordService 320 - 扫描: record
+2021-03-31 14:29:26,254 [Thread-7] INFO  oshi.util.FileUtil 249 - No oshi.properties file found from ClassLoader ParallelWebappClassLoader
+  context: ROOT
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@37f8bb67
+
+2021-03-31 14:29:26,255 [Thread-7] INFO  oshi.util.FileUtil 249 - No oshi.properties file found from ClassLoader sun.misc.Launcher$AppClassLoader@70dea4e
+2021-03-31 14:29:26,419 [main] INFO  o.a.g.t.w.WebSocketTunnelModule 69 - Loading JSR-356 WebSocket support...
+2021-03-31 14:29:26,559 [Thread-4] ERROR o.a.g.a.j.utils.HttpClientUtil 89 - HttpClient查询失败
+java.net.UnknownHostException: core: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.guacamole.auth.jumpserver.utils.HttpClientUtil.execute(HttpClientUtil.java:85)
+	at org.apache.guacamole.auth.jumpserver.utils.HttpClientUtil.post(HttpClientUtil.java:118)
+	at org.apache.guacamole.auth.jumpserver.api.JumpserverService.getRegisterTerminal(JumpserverService.java:50)
+	at org.apache.guacamole.auth.jumpserver.register.JumpserverRegisterService.lambda$getAccessKey$0(JumpserverRegisterService.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-31 14:29:26,560 [Thread-7] ERROR o.a.g.a.j.utils.HttpClientUtil 142 - HttpClient查询失败
+java.net.UnknownHostException: core
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.guacamole.auth.jumpserver.utils.HttpClientUtil.postJSON(HttpClientUtil.java:138)
+	at org.apache.guacamole.auth.jumpserver.api.JumpserverService.reportStat(JumpserverService.java:352)
+	at org.apache.guacamole.auth.jumpserver.register.JumpserverRegisterService.lambda$keepReportStat$3(JumpserverRegisterService.java:260)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-31 14:29:26,560 [Thread-4] ERROR o.a.g.a.j.r.JumpserverRegisterService 158 - 注册终端失败
+org.apache.guacamole.auth.jumpserver.utils.HttpClientException: HttpClient查询失败
+	at org.apache.guacamole.auth.jumpserver.utils.HttpClientUtil.execute(HttpClientUtil.java:90)
+	at org.apache.guacamole.auth.jumpserver.utils.HttpClientUtil.post(HttpClientUtil.java:118)
+	at org.apache.guacamole.auth.jumpserver.api.JumpserverService.getRegisterTerminal(JumpserverService.java:50)
+	at org.apache.guacamole.auth.jumpserver.register.JumpserverRegisterService.lambda$getAccessKey$0(JumpserverRegisterService.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.UnknownHostException: core: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.guacamole.auth.jumpserver.utils.HttpClientUtil.execute(HttpClientUtil.java:85)
+	... 4 common frames omitted
+2021-03-31 14:29:26,561 [Thread-7] ERROR o.a.g.a.j.r.JumpserverRegisterService 262 - 心跳异常
+org.apache.guacamole.auth.jumpserver.utils.HttpClientException: HttpClient查询失败
+	at org.apache.guacamole.auth.jumpserver.utils.HttpClientUtil.postJSON(HttpClientUtil.java:143)
+	at org.apache.guacamole.auth.jumpserver.api.JumpserverService.reportStat(JumpserverService.java:352)
+	at org.apache.guacamole.auth.jumpserver.register.JumpserverRegisterService.lambda$keepReportStat$3(JumpserverRegisterService.java:260)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.UnknownHostException: core
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.guacamole.auth.jumpserver.utils.HttpClientUtil.postJSON(HttpClientUtil.java:138)
+	... 3 common frames omitted
+2021-03-31 14:29:27,162 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:28,162 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:29,163 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:30,164 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:31,164 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:32,165 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:33,166 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:34,166 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:35,167 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:36,168 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:37,168 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:38,169 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:39,170 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:40,171 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:41,171 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:42,172 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:43,173 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端
+2021-03-31 14:29:44,173 [Thread-5] WARN  o.a.g.a.j.r.JumpserverRegisterService 174 - 等待注册终端

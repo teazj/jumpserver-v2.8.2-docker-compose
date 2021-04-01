@@ -1,0 +1,4 @@
+2021-04-01 14:52:54 [ERRO] Report stat err: Post "http://core:8080/api/v1/terminal/components/state/": dial tcp 192.168.250.2:8080: connect: connection refused
+2021-04-01 14:52:54 [ERRO] Post "http://core:8080/api/v1/terminal/terminals/status/": dial tcp 192.168.250.2:8080: connect: connection refused
+2021-04-01 15:35:57 [ERRO] GET http://core:8080/api/v1/users/profile/ failed, get code: 401, {"detail":"Invalid signature.","code":"authentication_failed"}
+2021-04-01 15:35:57 [ERRO] Access key unauthorized, try to register new access key

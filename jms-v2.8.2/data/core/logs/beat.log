@@ -1,0 +1,527 @@
+celery beat v4.4.2 (cliffs) is starting.
+Traceback (most recent call last):
+  File "/usr/local/bin/celery", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/site-packages/celery/__main__.py", line 16, in main
+    _main()
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 322, in main
+    cmd.execute_from_commandline(argv)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 495, in execute_from_commandline
+    super(CeleryCommand, self).execute_from_commandline(argv)))
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 305, in execute_from_commandline
+    return self.handle_argv(self.prog_name, argv[1:])
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 487, in handle_argv
+    return self.execute(command, argv)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 415, in execute
+    return cls(
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 308, in run_from_argv
+    return self.handle_argv(prog_name,
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 393, in handle_argv
+    return self(*args, **options)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 253, in __call__
+    ret = self.run(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/beat.py", line 109, in run
+    return beat().run()
+  File "/usr/local/lib/python3.8/site-packages/celery/apps/beat.py", line 79, in run
+    self.init_loader()
+  File "/usr/local/lib/python3.8/site-packages/celery/apps/beat.py", line 128, in init_loader
+    self.app.loader.init_worker()
+  File "/usr/local/lib/python3.8/site-packages/celery/loaders/base.py", line 114, in init_worker
+    self.import_default_modules()
+  File "/usr/local/lib/python3.8/site-packages/celery/loaders/base.py", line 108, in import_default_modules
+    raise response
+  File "/usr/local/lib/python3.8/site-packages/celery/utils/dispatch/signal.py", line 288, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 84, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 122, in validate_models
+    self.django_setup()
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 118, in django_setup
+    django.setup()
+  File "/usr/local/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 83, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 70, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 196, in __init__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.
+Get beat lock start to run it
+celery beat v4.4.2 (cliffs) is starting.
+Traceback (most recent call last):
+  File "/usr/local/bin/celery", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/site-packages/celery/__main__.py", line 16, in main
+    _main()
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 322, in main
+    cmd.execute_from_commandline(argv)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 495, in execute_from_commandline
+    super(CeleryCommand, self).execute_from_commandline(argv)))
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 305, in execute_from_commandline
+    return self.handle_argv(self.prog_name, argv[1:])
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 487, in handle_argv
+    return self.execute(command, argv)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 415, in execute
+    return cls(
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 308, in run_from_argv
+    return self.handle_argv(prog_name,
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 393, in handle_argv
+    return self(*args, **options)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 253, in __call__
+    ret = self.run(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/beat.py", line 109, in run
+    return beat().run()
+  File "/usr/local/lib/python3.8/site-packages/celery/apps/beat.py", line 79, in run
+    self.init_loader()
+  File "/usr/local/lib/python3.8/site-packages/celery/apps/beat.py", line 128, in init_loader
+    self.app.loader.init_worker()
+  File "/usr/local/lib/python3.8/site-packages/celery/loaders/base.py", line 114, in init_worker
+    self.import_default_modules()
+  File "/usr/local/lib/python3.8/site-packages/celery/loaders/base.py", line 108, in import_default_modules
+    raise response
+  File "/usr/local/lib/python3.8/site-packages/celery/utils/dispatch/signal.py", line 288, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 84, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 122, in validate_models
+    self.django_setup()
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 118, in django_setup
+    django.setup()
+  File "/usr/local/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 83, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 70, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 196, in __init__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.
+Get beat lock start to run it
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:32: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is 0 or x is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:32: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is 0 or x is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:34: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif y is 0 or y is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:34: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif y is 0 or y is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:260: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if original_result is 0:
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/baseblobservice.py:1008: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if lease_duration is not -1 and \
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/baseblobservice.py:2607: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if lease_duration is not -1 and \
+/usr/local/lib/python3.8/site-packages/azure/storage/common/_connection.py:82: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  self.protocol = self.protocol if parsed_url.scheme is '' else parsed_url.scheme
+beat: Starting...
+Writing entries...
+Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+Writing entries...
+Scheduler: Sending due task assets.tasks.admin_user_connectivity.test_admin_user_connectivity_period (assets.tasks.admin_user_connectivity.test_admin_user_connectivity_period)
+Scheduler: Sending due task check_password_expired_periodic (users.tasks.check_password_expired)
+Scheduler: Sending due task check_user_expired_periodic (users.tasks.check_user_expired)
+Scheduler: Sending due task ops.tasks.check_server_performance_period (ops.tasks.check_server_performance_period)
+Scheduler: Sending due task terminal.tasks.delete_terminal_status_period (terminal.tasks.delete_terminal_status_period)
+Scheduler: Sending due task terminal.tasks.clean_orphan_session (terminal.tasks.clean_orphan_session)
+DatabaseScheduler: Schedule changed.
+Writing entries...
+Writing entries...
+Writing entries...
+Writing entries...
+Scheduler: Sending due task terminal.tasks.clean_orphan_session (terminal.tasks.clean_orphan_session)
+Writing entries...
+Writing entries...
+Writing entries...
+Scheduler: Sending due task terminal.tasks.clean_orphan_session (terminal.tasks.clean_orphan_session)
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:32: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is 0 or x is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:32: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is 0 or x is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:34: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif y is 0 or y is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:34: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif y is 0 or y is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:260: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if original_result is 0:
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/_upload_chunking.py:403: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if n is 0 or self._buffer.closed:
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/baseblobservice.py:1008: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if lease_duration is not -1 and \
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/baseblobservice.py:2607: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if lease_duration is not -1 and \
+/usr/local/lib/python3.8/site-packages/azure/storage/common/_connection.py:82: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  self.protocol = self.protocol if parsed_url.scheme is '' else parsed_url.scheme
+beat: Starting...
+Writing entries...
+beat raised exception <class 'django.db.utils.ProgrammingError'>: ProgrammingError(1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/kombu/utils/objects.py", line 42, in __get__
+    return obj.__dict__[self.__name__]
+KeyError: 'scheduler'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/celery/apps/beat.py", line 109, in start_scheduler
+    service.start()
+  File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 622, in start
+    humanize_seconds(self.scheduler.max_interval))
+  File "/usr/local/lib/python3.8/site-packages/kombu/utils/objects.py", line 44, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 666, in scheduler
+    return self.get_scheduler()
+  File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 657, in get_scheduler
+    return symbol_by_name(self.scheduler_cls, aliases=aliases)(
+  File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 233, in __init__
+    Scheduler.__init__(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 257, in __init__
+    self.setup_schedule()
+  File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 241, in setup_schedule
+    self.install_default_entries(self.schedule)
+  File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 362, in schedule
+    self._schedule = self.all_as_schedule()
+  File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 247, in all_as_schedule
+    for model in self.Model.objects.enabled():
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 287, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1303, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+Traceback (most recent call last):
+File "/usr/local/lib/python3.8/site-packages/kombu/utils/objects.py", line 42, in __get__
+return obj.__dict__[self.__name__]
+KeyError
+:
+'scheduler'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+return self.cursor.execute(sql, params)
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+return self.cursor.execute(query, args)
+File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+res = self._query(query)
+File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+db.query(q)
+File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+_mysql.connection.query(self, query)
+MySQLdb._exceptions
+.
+ProgrammingError
+:
+(1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File "/usr/local/bin/celery", line 8, in <module>
+sys.exit(main())
+File "/usr/local/lib/python3.8/site-packages/celery/__main__.py", line 16, in main
+_main()
+File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 322, in main
+cmd.execute_from_commandline(argv)
+File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 495, in execute_from_commandline
+super(CeleryCommand, self).execute_from_commandline(argv)))
+File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 305, in execute_from_commandline
+return self.handle_argv(self.prog_name, argv[1:])
+File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 487, in handle_argv
+return self.execute(command, argv)
+File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 415, in execute
+return cls(
+File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 308, in run_from_argv
+return self.handle_argv(prog_name,
+File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 393, in handle_argv
+return self(*args, **options)
+File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 253, in __call__
+ret = self.run(*args, **kwargs)
+File "/usr/local/lib/python3.8/site-packages/celery/bin/beat.py", line 109, in run
+return beat().run()
+File "/usr/local/lib/python3.8/site-packages/celery/apps/beat.py", line 81, in run
+self.start_scheduler()
+File "/usr/local/lib/python3.8/site-packages/celery/apps/beat.py", line 109, in start_scheduler
+service.start()
+File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 622, in start
+humanize_seconds(self.scheduler.max_interval))
+File "/usr/local/lib/python3.8/site-packages/kombu/utils/objects.py", line 44, in __get__
+value = obj.__dict__[self.__name__] = self.__get(obj)
+File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 666, in scheduler
+return self.get_scheduler()
+File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 657, in get_scheduler
+return symbol_by_name(self.scheduler_cls, aliases=aliases)(
+File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 233, in __init__
+Scheduler.__init__(self, *args, **kwargs)
+File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 257, in __init__
+self.setup_schedule()
+File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 241, in setup_schedule
+self.install_default_entries(self.schedule)
+File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 362, in schedule
+self._schedule = self.all_as_schedule()
+File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 247, in all_as_schedule
+for model in self.Model.objects.enabled():
+File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 287, in __iter__
+self._fetch_all()
+File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1303, in _fetch_all
+self._result_cache = list(self._iterable_class(self))
+File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+cursor.execute(sql, params)
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+return executor(sql, params, many, context)
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+return self.cursor.execute(sql, params)
+File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+raise dj_exc_value.with_traceback(traceback) from exc_value
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+return self.cursor.execute(sql, params)
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+return self.cursor.execute(query, args)
+File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+res = self._query(query)
+File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+db.query(q)
+File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+_mysql.connection.query(self, query)
+django.db.utils
+.
+ProgrammingError
+:
+(1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+Writing entries...
+celery beat v4.4.2 (cliffs) is starting.
+__    -    ... __   -        _
+LocalTime -> 2021-04-01 15:34:49
+Configuration ->
+    . broker -> redis://:**@redis:6379/3
+    . loader -> celery.loaders.app.AppLoader
+    . scheduler -> django_celery_beat.schedulers.DatabaseScheduler
+
+    . logfile -> [stderr]@%INFO
+    . maxinterval -> 1.00 minute (60.0s)
+Get beat lock start to run it
+beat: Starting...
+Writing entries...
+beat raised exception <class 'django.db.utils.ProgrammingError'>: ProgrammingError(1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/kombu/utils/objects.py", line 42, in __get__
+    return obj.__dict__[self.__name__]
+KeyError: 'scheduler'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/celery/apps/beat.py", line 109, in start_scheduler
+    service.start()
+  File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 622, in start
+    humanize_seconds(self.scheduler.max_interval))
+  File "/usr/local/lib/python3.8/site-packages/kombu/utils/objects.py", line 44, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 666, in scheduler
+    return self.get_scheduler()
+  File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 657, in get_scheduler
+    return symbol_by_name(self.scheduler_cls, aliases=aliases)(
+  File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 233, in __init__
+    Scheduler.__init__(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 257, in __init__
+    self.setup_schedule()
+  File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 241, in setup_schedule
+    self.install_default_entries(self.schedule)
+  File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 362, in schedule
+    self._schedule = self.all_as_schedule()
+  File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 247, in all_as_schedule
+    for model in self.Model.objects.enabled():
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 287, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1303, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+Traceback (most recent call last):
+File "/usr/local/lib/python3.8/site-packages/kombu/utils/objects.py", line 42, in __get__
+return obj.__dict__[self.__name__]
+KeyError
+:
+'scheduler'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+return self.cursor.execute(sql, params)
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+return self.cursor.execute(query, args)
+File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+res = self._query(query)
+File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+db.query(q)
+File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+_mysql.connection.query(self, query)
+MySQLdb._exceptions
+.
+ProgrammingError
+:
+(1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File "/usr/local/bin/celery", line 8, in <module>
+sys.exit(main())
+File "/usr/local/lib/python3.8/site-packages/celery/__main__.py", line 16, in main
+_main()
+File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 322, in main
+cmd.execute_from_commandline(argv)
+File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 495, in execute_from_commandline
+super(CeleryCommand, self).execute_from_commandline(argv)))
+File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 305, in execute_from_commandline
+return self.handle_argv(self.prog_name, argv[1:])
+File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 487, in handle_argv
+return self.execute(command, argv)
+File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 415, in execute
+return cls(
+File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 308, in run_from_argv
+return self.handle_argv(prog_name,
+File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 393, in handle_argv
+return self(*args, **options)
+File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 253, in __call__
+ret = self.run(*args, **kwargs)
+File "/usr/local/lib/python3.8/site-packages/celery/bin/beat.py", line 109, in run
+return beat().run()
+File "/usr/local/lib/python3.8/site-packages/celery/apps/beat.py", line 81, in run
+self.start_scheduler()
+File "/usr/local/lib/python3.8/site-packages/celery/apps/beat.py", line 109, in start_scheduler
+service.start()
+File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 622, in start
+humanize_seconds(self.scheduler.max_interval))
+File "/usr/local/lib/python3.8/site-packages/kombu/utils/objects.py", line 44, in __get__
+value = obj.__dict__[self.__name__] = self.__get(obj)
+File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 666, in scheduler
+return self.get_scheduler()
+File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 657, in get_scheduler
+return symbol_by_name(self.scheduler_cls, aliases=aliases)(
+File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 233, in __init__
+Scheduler.__init__(self, *args, **kwargs)
+File "/usr/local/lib/python3.8/site-packages/celery/beat.py", line 257, in __init__
+self.setup_schedule()
+File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 241, in setup_schedule
+self.install_default_entries(self.schedule)
+File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 362, in schedule
+self._schedule = self.all_as_schedule()
+File "/usr/local/lib/python3.8/site-packages/django_celery_beat/schedulers.py", line 247, in all_as_schedule
+for model in self.Model.objects.enabled():
+File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 287, in __iter__
+self._fetch_all()
+File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1303, in _fetch_all
+self._result_cache = list(self._iterable_class(self))
+File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+cursor.execute(sql, params)
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+return executor(sql, params, many, context)
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+return self.cursor.execute(sql, params)
+File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+raise dj_exc_value.with_traceback(traceback) from exc_value
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+return self.cursor.execute(sql, params)
+File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+return self.cursor.execute(query, args)
+File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+res = self._query(query)
+File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+db.query(q)
+File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+_mysql.connection.query(self, query)
+django.db.utils
+.
+ProgrammingError
+:
+(1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+Writing entries...
+celery beat v4.4.2 (cliffs) is starting.
+__    -    ... __   -        _
+LocalTime -> 2021-04-01 15:35:20
+Configuration ->
+    . broker -> redis://:**@redis:6379/3
+    . loader -> celery.loaders.app.AppLoader
+    . scheduler -> django_celery_beat.schedulers.DatabaseScheduler
+
+    . logfile -> [stderr]@%INFO
+    . maxinterval -> 1.00 minute (60.0s)
+Get beat lock start to run it
+beat: Starting...
+Writing entries...
+Writing entries...

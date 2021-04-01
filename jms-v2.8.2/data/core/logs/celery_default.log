@@ -1,0 +1,439 @@
+Traceback (most recent call last):
+  File "/usr/local/bin/celery", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/site-packages/celery/__main__.py", line 16, in main
+    _main()
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 322, in main
+    cmd.execute_from_commandline(argv)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 495, in execute_from_commandline
+    super(CeleryCommand, self).execute_from_commandline(argv)))
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 305, in execute_from_commandline
+    return self.handle_argv(self.prog_name, argv[1:])
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 487, in handle_argv
+    return self.execute(command, argv)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 415, in execute
+    return cls(
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/worker.py", line 223, in run_from_argv
+    return self(*args, **options)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 253, in __call__
+    ret = self.run(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/worker.py", line 253, in run
+    worker = self.app.Worker(
+  File "/usr/local/lib/python3.8/site-packages/celery/worker/worker.py", line 96, in __init__
+    self.app.loader.init_worker()
+  File "/usr/local/lib/python3.8/site-packages/celery/loaders/base.py", line 114, in init_worker
+    self.import_default_modules()
+  File "/usr/local/lib/python3.8/site-packages/celery/loaders/base.py", line 108, in import_default_modules
+    raise response
+  File "/usr/local/lib/python3.8/site-packages/celery/utils/dispatch/signal.py", line 288, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 84, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 122, in validate_models
+    self.django_setup()
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 118, in django_setup
+    django.setup()
+  File "/usr/local/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 83, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 70, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 196, in __init__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.
+Traceback (most recent call last):
+  File "/usr/local/bin/celery", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/site-packages/celery/__main__.py", line 16, in main
+    _main()
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 322, in main
+    cmd.execute_from_commandline(argv)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 495, in execute_from_commandline
+    super(CeleryCommand, self).execute_from_commandline(argv)))
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 305, in execute_from_commandline
+    return self.handle_argv(self.prog_name, argv[1:])
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 487, in handle_argv
+    return self.execute(command, argv)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/celery.py", line 415, in execute
+    return cls(
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/worker.py", line 223, in run_from_argv
+    return self(*args, **options)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/base.py", line 253, in __call__
+    ret = self.run(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/celery/bin/worker.py", line 253, in run
+    worker = self.app.Worker(
+  File "/usr/local/lib/python3.8/site-packages/celery/worker/worker.py", line 96, in __init__
+    self.app.loader.init_worker()
+  File "/usr/local/lib/python3.8/site-packages/celery/loaders/base.py", line 114, in init_worker
+    self.import_default_modules()
+  File "/usr/local/lib/python3.8/site-packages/celery/loaders/base.py", line 108, in import_default_modules
+    raise response
+  File "/usr/local/lib/python3.8/site-packages/celery/utils/dispatch/signal.py", line 288, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 84, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 122, in validate_models
+    self.django_setup()
+  File "/usr/local/lib/python3.8/site-packages/celery/fixups/django.py", line 118, in django_setup
+    django.setup()
+  File "/usr/local/lib/python3.8/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 83, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 70, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.8/site-packages/django/conf/__init__.py", line 196, in __init__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:32: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is 0 or x is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:32: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is 0 or x is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:34: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif y is 0 or y is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:34: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif y is 0 or y is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:260: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if original_result is 0:
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/_upload_chunking.py:403: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if n is 0 or self._buffer.closed:
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/baseblobservice.py:1008: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if lease_duration is not -1 and \
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/baseblobservice.py:2607: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if lease_duration is not -1 and \
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:800: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(RuntimeWarning(ROOT_DISCOURAGED.format(
+Connected to redis://:**@redis:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@zabbix ready.
+Received task: celery.backend_cleanup[9d909d3b-b733-406e-880e-a99c0fffaa0b]   expires:[2021-04-01 19:10:04.734429+00:00]
+Received task: users.tasks.check_password_expired[5f9d85ab-09d8-42ac-882e-4995ed8014da]  
+Received task: users.tasks.check_user_expired[c58918be-fe46-4845-b12a-b61554ba682f]  
+Task celery.backend_cleanup[9d909d3b-b733-406e-880e-a99c0fffaa0b] succeeded in 0.016768962144851685s: None
+Received task: ops.tasks.check_server_performance_period[0bc1de7c-d13b-4d78-b573-366438081389]  
+Received task: terminal.tasks.delete_terminal_status_period[32e70f61-b179-44a1-b704-00ab057f5ef3]  
+Task users.tasks.check_user_expired[c58918be-fe46-4845-b12a-b61554ba682f] succeeded in 0.034483117051422596s: None
+Task users.tasks.check_password_expired[5f9d85ab-09d8-42ac-882e-4995ed8014da] succeeded in 0.05682241078466177s: None
+Task ops.tasks.check_server_performance_period[0bc1de7c-d13b-4d78-b573-366438081389] succeeded in 0.026146123185753822s: None
+Received task: terminal.tasks.clean_orphan_session[9ad27f92-b048-4209-b797-94b56f451a1c]  
+Received task: ops.tasks.clean_celery_periodic_tasks[8eb4d22e-2410-459b-9be1-25dff9090e8e]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[e58dec4f-d6d6-45d5-96b8-37d653c81abf]  
+Received task: users.tasks.check_password_expired_periodic[df939b65-8c20-4632-a183-5c581bee0935]  
+Task terminal.tasks.delete_terminal_status_period[32e70f61-b179-44a1-b704-00ab057f5ef3] succeeded in 0.04767418932169676s: None
+Received task: users.tasks.check_user_expired_periodic[e381d3ad-31fa-4df9-937f-e4a2b5e701cf]  
+Task ops.tasks.clean_celery_periodic_tasks[8eb4d22e-2410-459b-9be1-25dff9090e8e] succeeded in 0.03814577776938677s: None
+Received task: users.tasks.import_ldap_user_periodic[ee641725-20c0-4bee-8e88-095d3545174d]  
+Task users.tasks.import_ldap_user_periodic[ee641725-20c0-4bee-8e88-095d3545174d] succeeded in 0.034491184167563915s: None
+Received task: terminal.tasks.delete_terminal_status_period[e36967ba-d170-4f2b-af69-92f265dbe6e6]  
+Received task: terminal.tasks.clean_orphan_session[b4c68a0e-c628-4659-9a0b-1d29d44b378a]  
+Received task: terminal.tasks.clean_expired_session_period[445dc0e8-5808-4ace-b404-aff23e33c634]  
+Task users.tasks.check_password_expired_periodic[df939b65-8c20-4632-a183-5c581bee0935] succeeded in 0.13918567541986704s: None
+Task terminal.tasks.delete_terminal_status_period[e36967ba-d170-4f2b-af69-92f265dbe6e6] succeeded in 0.055123365484178066s: None
+Start clean expired session record, commands and replay
+Task users.tasks.check_user_expired_periodic[e381d3ad-31fa-4df9-937f-e4a2b5e701cf] succeeded in 0.14603963401168585s: None
+Task terminal.tasks.clean_orphan_session[9ad27f92-b048-4209-b797-94b56f451a1c] succeeded in 0.20667855255305767s: None
+Task terminal.tasks.clean_orphan_session[b4c68a0e-c628-4659-9a0b-1d29d44b378a] succeeded in 0.09188974183052778s: None
+Clean session item done
+Clean session command done
+find: ‘/opt/jumpserver/data/media/replay’: No such file or directory
+find: ‘/opt/jumpserver/data/media/replay’: No such file or directory
+Clean session replay done
+Task terminal.tasks.clean_expired_session_period[445dc0e8-5808-4ace-b404-aff23e33c634] succeeded in 0.14135944936424494s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[e58dec4f-d6d6-45d5-96b8-37d653c81abf] succeeded in 0.5429595420137048s: None
+Events of group {task} enabled by remote.
+Received task: terminal.tasks.clean_orphan_session[2509a03d-cb2b-4452-877d-15be438f9224]  
+Task terminal.tasks.clean_orphan_session[2509a03d-cb2b-4452-877d-15be438f9224] succeeded in 0.00895961094647646s: None
+Received task: terminal.tasks.clean_orphan_session[2e1a8726-4002-47c4-9408-5631f3d9e88f]  
+Task terminal.tasks.clean_orphan_session[2e1a8726-4002-47c4-9408-5631f3d9e88f] succeeded in 0.010809948667883873s: None
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:32: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is 0 or x is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:32: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is 0 or x is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:34: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif y is 0 or y is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:34: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif y is 0 or y is 1:
+/usr/local/lib/python3.8/site-packages/jmespath/visitor.py:260: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if original_result is 0:
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/_upload_chunking.py:403: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if n is 0 or self._buffer.closed:
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/baseblobservice.py:1008: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if lease_duration is not -1 and \
+/usr/local/lib/python3.8/site-packages/azure/storage/blob/baseblobservice.py:2607: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if lease_duration is not -1 and \
+/usr/local/lib/python3.8/site-packages/azure/storage/common/_connection.py:82: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  self.protocol = self.protocol if parsed_url.scheme is '' else parsed_url.scheme
+/usr/local/lib/python3.8/site-packages/celery/platforms.py:800: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(RuntimeWarning(ROOT_DISCOURAGED.format(
+Connected to redis://:**@redis:6379/3
+mingle: searching for neighbors
+mingle: all alone
+celery@zabbix ready.
+Received task: ops.tasks.clean_celery_periodic_tasks[b4b7867d-003f-4a18-be8c-09a4dd0e21ad]  
+Received task: ops.tasks.create_or_update_registered_periodic_tasks[18946b5b-a6e1-4f05-8bd1-416f9f36daf8]  
+Received task: users.tasks.check_password_expired_periodic[71b48d06-2fe3-458d-8fde-80107a1436f8]  
+Received task: users.tasks.check_user_expired_periodic[345a5f73-a4a1-4c79-880e-db76a14cb8f0]  
+Received task: users.tasks.import_ldap_user_periodic[10400740-84d4-43cf-8b40-64d523526839]  
+Task users.tasks.check_password_expired_periodic[71b48d06-2fe3-458d-8fde-80107a1436f8] succeeded in 0.03599204029887915s: None
+Received task: terminal.tasks.delete_terminal_status_period[bf0c5536-b3f2-4500-806d-0e7a02b5d474]  
+Task users.tasks.check_user_expired_periodic[345a5f73-a4a1-4c79-880e-db76a14cb8f0] succeeded in 0.030632746405899525s: None
+Task users.tasks.import_ldap_user_periodic[10400740-84d4-43cf-8b40-64d523526839] succeeded in 0.02277004811912775s: None
+Task ops.tasks.create_or_update_registered_periodic_tasks[18946b5b-a6e1-4f05-8bd1-416f9f36daf8] succeeded in 0.05704435519874096s: None
+Received task: terminal.tasks.clean_orphan_session[50ed9d7b-6db5-416b-9d9f-138363b48950]  
+Received task: terminal.tasks.clean_expired_session_period[89184c7a-e35f-4747-a2a3-c5d526499cc1]  
+Start clean expired session record, commands and replay
+Task ops.tasks.clean_celery_periodic_tasks[b4b7867d-003f-4a18-be8c-09a4dd0e21ad] raised unexpected: ProgrammingError(1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/celery/app/trace.py", line 650, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/opt/jumpserver/apps/ops/celery/decorator.py", line 87, in decorate
+    return func(*args, **kwargs)
+  File "/opt/jumpserver/apps/ops/tasks.py", line 111, in clean_celery_periodic_tasks
+    task = get_celery_periodic_task(task_name)
+  File "/opt/jumpserver/apps/ops/celery/utils.py", line 100, in get_celery_periodic_task
+    task = PeriodicTask.objects.filter(name=task_name).first()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 678, in first
+    for obj in (self if self.ordered else self.order_by('pk'))[:1]:
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 287, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1303, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'jumpserver.django_celery_beat_periodictask' doesn't exist")
+Task terminal.tasks.clean_orphan_session[50ed9d7b-6db5-416b-9d9f-138363b48950] raised unexpected: ProgrammingError(1146, "Table 'jumpserver.terminal_session' doesn't exist")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'jumpserver.terminal_session' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/celery/app/trace.py", line 650, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/opt/jumpserver/apps/ops/celery/decorator.py", line 73, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/jumpserver/apps/ops/celery/decorator.py", line 87, in decorate
+    return func(*args, **kwargs)
+  File "/opt/jumpserver/apps/ops/celery/decorator.py", line 100, in decorate
+    return func(*args, **kwargs)
+  File "/opt/jumpserver/apps/terminal/tasks.py", line 42, in clean_orphan_session
+    for session in active_sessions:
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 287, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1303, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'jumpserver.terminal_session' doesn't exist")
+Task terminal.tasks.delete_terminal_status_period[bf0c5536-b3f2-4500-806d-0e7a02b5d474] raised unexpected: ProgrammingError(1146, "Table 'jumpserver.terminal_status' doesn't exist")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'jumpserver.terminal_status' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/celery/app/trace.py", line 650, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/opt/jumpserver/apps/ops/celery/decorator.py", line 73, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/jumpserver/apps/ops/celery/decorator.py", line 87, in decorate
+    return func(*args, **kwargs)
+  File "/opt/jumpserver/apps/ops/celery/decorator.py", line 100, in decorate
+    return func(*args, **kwargs)
+  File "/opt/jumpserver/apps/terminal/tasks.py", line 33, in delete_terminal_status_period
+    Status.objects.filter(date_created__lt=yesterday).delete()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    collector.collect(del_query)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/deletion.py", line 243, in collect
+    new_objs = self.add(objs, source, nullable,
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/deletion.py", line 107, in add
+    if not objs:
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 291, in __bool__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1303, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'jumpserver.terminal_status' doesn't exist")
+Task terminal.tasks.clean_expired_session_period[89184c7a-e35f-4747-a2a3-c5d526499cc1] raised unexpected: ProgrammingError(1146, "Table 'jumpserver.terminal_session' doesn't exist")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'jumpserver.terminal_session' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/celery/app/trace.py", line 650, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/opt/jumpserver/apps/ops/celery/decorator.py", line 73, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/jumpserver/apps/ops/celery/decorator.py", line 87, in decorate
+    return func(*args, **kwargs)
+  File "/opt/jumpserver/apps/ops/celery/decorator.py", line 100, in decorate
+    return func(*args, **kwargs)
+  File "/opt/jumpserver/apps/terminal/tasks.py", line 63, in clean_expired_session_period
+    expired_sessions.delete()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 746, in delete
+    collector.collect(del_query)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/deletion.py", line 243, in collect
+    new_objs = self.add(objs, source, nullable,
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/deletion.py", line 107, in add
+    if not objs:
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 291, in __bool__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1303, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'jumpserver.terminal_session' doesn't exist")
+Events of group {task} enabled by remote.
+Received task: common.tasks.send_mail_async[73706890-3ff0-43ff-970e-2094613556c3]  
+2021-04-01 15:36:33 [tasks ERROR] Sending mail error: please run connect() first
+Sending mail error: please run connect() first
+Task common.tasks.send_mail_async[73706890-3ff0-43ff-970e-2094613556c3] succeeded in 0.011250386945903301s: None

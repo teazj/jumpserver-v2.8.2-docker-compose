@@ -1,0 +1,1642 @@
+[2021-04-01 14:51:16 +0800] [811] [INFO] Starting gunicorn 19.9.0
+[2021-04-01 14:51:16 +0800] [811] [INFO] Listening at: http://0.0.0.0:8080 (811)
+[2021-04-01 14:51:16 +0800] [811] [INFO] Using worker: gthread
+/usr/local/lib/python3.8/os.py:1023: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  return io.open(fd, *args, **kwargs)
+[2021-04-01 14:51:16 +0800] [813] [INFO] Booting worker with pid: 813
+/usr/local/lib/python3.8/os.py:1023: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  return io.open(fd, *args, **kwargs)
+[2021-04-01 14:51:16 +0800] [814] [INFO] Booting worker with pid: 814
+/usr/local/lib/python3.8/os.py:1023: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  return io.open(fd, *args, **kwargs)
+[2021-04-01 14:51:16 +0800] [815] [INFO] Booting worker with pid: 815
+/usr/local/lib/python3.8/os.py:1023: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  return io.open(fd, *args, **kwargs)
+[2021-04-01 14:51:16 +0800] [816] [INFO] Booting worker with pid: 816
+192.168.250.6 [01/Apr/2021:14:51:23 +0800] 0.445492s "HEAD /api/health/ HTTP/1.1" 200 33
+192.168.250.6 [01/Apr/2021:14:51:23 +0800] 0.049926s "POST /api/v1/terminal/terminal-registrations/ HTTP/1.1" 201 349
+192.168.250.6 [01/Apr/2021:14:51:23 +0800] 0.178611s "GET /api/v1/users/profile/ HTTP/1.1" 200 1087
+192.168.250.6 [01/Apr/2021:14:51:23 +0800] 0.028057s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:14:51:23 +0800] 0.022114s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+2021-04-01 14:51:39 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:51:39 +0800] 0.474331s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.6 [01/Apr/2021:14:51:53 +0800] 0.022610s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:14:51:54 +0800] 0.419136s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+2021-04-01 14:52:09 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:52:09 +0800] 0.010371s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.6 [01/Apr/2021:14:52:23 +0800] 0.039720s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:14:52:24 +0800] 0.014701s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:14:52:24 +0800] 0.461535s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 14:52:39 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:52:39 +0800] 0.008212s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+[2021-04-01 14:53:11 +0800] [810] [INFO] Starting gunicorn 19.9.0
+[2021-04-01 14:53:11 +0800] [810] [INFO] Listening at: http://0.0.0.0:8080 (810)
+[2021-04-01 14:53:11 +0800] [810] [INFO] Using worker: gthread
+/usr/local/lib/python3.8/os.py:1023: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  return io.open(fd, *args, **kwargs)
+[2021-04-01 14:53:11 +0800] [812] [INFO] Booting worker with pid: 812
+/usr/local/lib/python3.8/os.py:1023: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  return io.open(fd, *args, **kwargs)
+[2021-04-01 14:53:11 +0800] [813] [INFO] Booting worker with pid: 813
+/usr/local/lib/python3.8/os.py:1023: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  return io.open(fd, *args, **kwargs)
+[2021-04-01 14:53:11 +0800] [814] [INFO] Booting worker with pid: 814
+/usr/local/lib/python3.8/os.py:1023: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  return io.open(fd, *args, **kwargs)
+[2021-04-01 14:53:11 +0800] [815] [INFO] Booting worker with pid: 815
+192.168.250.6 [01/Apr/2021:14:53:18 +0800] 0.426015s "HEAD /api/health/ HTTP/1.1" 200 33
+192.168.250.6 [01/Apr/2021:14:53:19 +0800] 0.553041s "GET /api/v1/users/profile/ HTTP/1.1" 200 1087
+192.168.250.6 [01/Apr/2021:14:53:19 +0800] 0.206494s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:14:53:19 +0800] 0.019572s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.9 [01/Apr/2021:14:53:19 +0800] 1.582184s "GET /core/auth/login/ HTTP/1.0" 200 7218
+2021-04-01 14:53:24 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:53:24 +0800] 0.484195s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.6 [01/Apr/2021:14:53:49 +0800] 0.018616s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:14:53:50 +0800] 0.431454s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 14:53:51 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: 身份认证信息未提供。
+192.168.250.9 [01/Apr/2021:14:53:51 +0800] 0.014372s "GET /api/v1/users/profile/ HTTP/1.0" 401 70
+192.168.250.9 [01/Apr/2021:14:53:52 +0800] 1.127463s "GET /core/auth/login/ HTTP/1.0" 200 7218
+2021-04-01 14:53:54 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:53:54 +0800] 0.009867s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.9 [01/Apr/2021:14:53:58 +0800] 0.873006s "POST /core/auth/login/ HTTP/1.0" 200 8680
+192.168.250.9 [01/Apr/2021:14:53:59 +0800] 0.074917s "GET /core/auth/captcha/image/9d41f28710e9156bba7f22f7430beff1b4e5b7b7/ HTTP/1.0" 200 4821
+192.168.250.6 [01/Apr/2021:14:54:19 +0800] 0.019420s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:14:54:19 +0800] 0.020029s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:14:54:20 +0800] 0.021575s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 14:54:24 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:54:24 +0800] 0.007627s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.9 [01/Apr/2021:14:54:47 +0800] 0.502728s "POST /core/auth/login/ HTTP/1.0" 302 0
+192.168.250.9 [01/Apr/2021:14:54:47 +0800] 0.027115s "GET /core/auth/login/guard/ HTTP/1.0" 302 0
+192.168.250.9 [01/Apr/2021:14:54:48 +0800] 0.014170s "GET /api/v1/settings/public/ HTTP/1.0" 200 746
+192.168.250.6 [01/Apr/2021:14:54:49 +0800] 0.015855s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.9 [01/Apr/2021:14:54:49 +0800] 0.014582s "GET /api/v1/settings/public/ HTTP/1.0" 200 746
+192.168.250.9 [01/Apr/2021:14:54:49 +0800] 0.047739s "GET /api/v1/users/profile/ HTTP/1.0" 200 1100
+192.168.250.6 [01/Apr/2021:14:54:50 +0800] 0.020605s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 14:54:54 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:54:54 +0800] 0.009621s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.6 [01/Apr/2021:14:55:19 +0800] 0.020175s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:14:55:19 +0800] 0.020236s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:14:55:20 +0800] 0.015376s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 14:55:24 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:55:24 +0800] 0.013990s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.9 [01/Apr/2021:14:55:48 +0800] 0.026984s "GET /api/v1/settings/public/ HTTP/1.0" 200 746
+192.168.250.9 [01/Apr/2021:14:55:49 +0800] 0.054058s "GET /api/v1/users/profile/ HTTP/1.0" 200 1100
+192.168.250.9 [01/Apr/2021:14:55:49 +0800] 0.046400s "GET /api/v1/users/profile/ HTTP/1.0" 200 1100
+192.168.250.9 [01/Apr/2021:14:55:49 +0800] 0.035882s "GET /api/v1/users/profile/ HTTP/1.0" 200 1100
+192.168.250.9 [01/Apr/2021:14:55:49 +0800] 0.033626s "OPTIONS /api/v1/users/profile/ HTTP/1.0" 200 13522
+192.168.250.6 [01/Apr/2021:14:55:49 +0800] 0.016013s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:14:55:50 +0800] 0.015661s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 14:55:54 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:55:54 +0800] 0.009949s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.6 [01/Apr/2021:14:56:19 +0800] 0.031245s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:14:56:19 +0800] 0.014125s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:14:56:20 +0800] 0.016395s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 14:56:24 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:56:24 +0800] 0.010571s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.9 [01/Apr/2021:14:56:35 +0800] 0.328677s "POST /core/auth/login/ HTTP/1.0" 200 8680
+192.168.250.9 [01/Apr/2021:14:56:35 +0800] 0.030824s "GET /core/auth/captcha/image/1b1124190d4f1f257d0554a0997a9373c2a5183c/ HTTP/1.0" 200 4619
+192.168.250.6 [01/Apr/2021:14:56:49 +0800] 0.025816s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:14:56:50 +0800] 0.018947s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 14:56:54 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:56:54 +0800] 0.006958s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.6 [01/Apr/2021:14:57:19 +0800] 0.021658s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:14:57:19 +0800] 0.014672s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:14:57:20 +0800] 0.019079s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 14:57:24 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:57:24 +0800] 0.014069s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.6 [01/Apr/2021:14:57:49 +0800] 0.016887s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 93
+192.168.250.6 [01/Apr/2021:14:57:50 +0800] 0.016162s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 14:57:54 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:57:54 +0800] 0.009122s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.6 [01/Apr/2021:14:58:19 +0800] 0.018821s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:14:58:19 +0800] 0.014932s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:14:58:20 +0800] 0.014563s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 14:58:24 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:58:24 +0800] 0.008039s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.6 [01/Apr/2021:14:58:49 +0800] 0.024501s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:14:58:50 +0800] 0.016854s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 14:58:54 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:14:58:54 +0800] 0.008511s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.6 [01/Apr/2021:14:59:19 +0800] 0.017287s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:14:59:19 +0800] 0.017760s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:14:59:20 +0800] 0.022766s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:14:59:49 +0800] 0.016867s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:14:59:50 +0800] 0.017010s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.9 [01/Apr/2021:15:00:18 +0800] 0.327515s "POST /core/auth/login/ HTTP/1.0" 200 8680
+192.168.250.9 [01/Apr/2021:15:00:19 +0800] 0.041628s "GET /core/auth/captcha/image/9734204a46e9154f5990868d4d8cd1b936c8b4c5/ HTTP/1.0" 200 4721
+192.168.250.6 [01/Apr/2021:15:00:19 +0800] 0.018428s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:00:19 +0800] 0.017755s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:00:20 +0800] 0.014735s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:00:49 +0800] 0.016242s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:00:50 +0800] 0.016223s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:01:19 +0800] 0.016947s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:01:19 +0800] 0.020147s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:01:20 +0800] 0.015312s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:01:50 +0800] 0.014913s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:01:50 +0800] 0.021709s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:02:19 +0800] 0.015528s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:02:20 +0800] 0.013885s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:02:20 +0800] 0.023920s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:02:50 +0800] 0.017551s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:02:50 +0800] 0.014532s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:03:19 +0800] 0.015984s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:03:20 +0800] 0.015350s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:03:20 +0800] 0.014076s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:03:50 +0800] 0.021252s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:03:50 +0800] 0.017701s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:04:19 +0800] 0.019961s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:04:20 +0800] 0.019810s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:04:20 +0800] 0.017478s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:04:50 +0800] 0.015467s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:04:50 +0800] 0.020174s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:05:19 +0800] 0.017607s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:05:20 +0800] 0.013448s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 94
+192.168.250.6 [01/Apr/2021:15:05:20 +0800] 0.017863s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:05:50 +0800] 0.027063s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:05:50 +0800] 0.017369s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:06:19 +0800] 0.021534s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:06:20 +0800] 0.017438s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:06:20 +0800] 0.017541s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:06:50 +0800] 0.016968s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:06:50 +0800] 0.018472s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:07:19 +0800] 0.017395s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:07:20 +0800] 0.014377s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:07:20 +0800] 0.023889s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.9 [01/Apr/2021:15:07:43 +0800] 0.038323s "POST /core/auth/login/ HTTP/1.0" 200 8553
+192.168.250.9 [01/Apr/2021:15:07:44 +0800] 0.021398s "GET /core/auth/captcha/image/1b8884fcadb432b2a66657f0ac95b4e5686d9ffd/ HTTP/1.0" 200 5114
+192.168.250.6 [01/Apr/2021:15:07:50 +0800] 0.015680s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:07:50 +0800] 0.014732s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:08:19 +0800] 0.020528s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:08:20 +0800] 0.023301s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:15:08:20 +0800] 0.013684s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:08:50 +0800] 0.014427s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:08:50 +0800] 0.014820s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:09:19 +0800] 0.016912s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:09:20 +0800] 0.015515s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:09:20 +0800] 0.014000s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+2021-04-01 15:09:49 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 72, in authenticate
+    uuid.UUID(access_key_id)
+  File "/usr/local/lib/python3.8/uuid.py", line 171, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 74, in authenticate
+    raise exceptions.AuthenticationFailed('Access key id invalid')
+rest_framework.exceptions.AuthenticationFailed: Access key id invalid
+192.168.250.8 [01/Apr/2021:15:09:49 +0800] 0.029386s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 65
+192.168.250.8 [01/Apr/2021:15:09:49 +0800] 0.071202s "POST /api/v1/terminal/terminal-registrations/ HTTP/1.1" 201 383
+192.168.250.8 [01/Apr/2021:15:09:50 +0800] 0.024013s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:09:50 +0800] 0.019938s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:15:09:50 +0800] 0.023397s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:10:19 +0800] 0.017783s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:10:19 +0800] 0.023025s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:10:19 +0800] 0.036294s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:15:10:20 +0800] 0.021969s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:10:20 +0800] 0.018735s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.9 [01/Apr/2021:15:10:33 +0800] 0.036089s "POST /core/auth/login/ HTTP/1.0" 200 8553
+192.168.250.9 [01/Apr/2021:15:10:33 +0800] 0.027212s "GET /core/auth/captcha/image/3a4b72d324d0764efff9faf39f330225f692f7f1/ HTTP/1.0" 200 4595
+192.168.250.9 [01/Apr/2021:15:10:39 +0800] 0.313496s "POST /core/auth/login/ HTTP/1.0" 200 8680
+192.168.250.9 [01/Apr/2021:15:10:40 +0800] 0.024401s "GET /core/auth/captcha/image/9a4f7ca17b0728b7169416f5e849b2c8daf20f27/ HTTP/1.0" 200 5341
+192.168.250.8 [01/Apr/2021:15:10:49 +0800] 0.019605s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:10:49 +0800] 0.019217s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.9 [01/Apr/2021:15:10:49 +0800] 0.036443s "POST /core/auth/login/ HTTP/1.0" 200 8553
+192.168.250.8 [01/Apr/2021:15:10:50 +0800] 0.020734s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:10:50 +0800] 0.021929s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:10:50 +0800] 0.016777s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.9 [01/Apr/2021:15:10:51 +0800] 0.025271s "GET /core/auth/captcha/image/b0e722b636d03e4adc1ce41db527dc18a0bfc554/ HTTP/1.0" 200 4854
+192.168.250.9 [01/Apr/2021:15:11:05 +0800] 0.387715s "POST /core/auth/login/ HTTP/1.0" 200 8680
+192.168.250.9 [01/Apr/2021:15:11:06 +0800] 0.026701s "GET /core/auth/captcha/image/a68d91b83d84412c9d1c1fc63d1416a6adda7c0b/ HTTP/1.0" 200 4436
+192.168.250.8 [01/Apr/2021:15:11:19 +0800] 0.019991s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:11:19 +0800] 0.018966s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:11:19 +0800] 0.015047s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:11:20 +0800] 0.020520s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:11:20 +0800] 0.018029s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:11:49 +0800] 0.015105s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:11:49 +0800] 0.016218s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:11:50 +0800] 0.019434s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:11:50 +0800] 0.016422s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:11:50 +0800] 0.015681s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.9 [01/Apr/2021:15:12:13 +0800] 0.015104s "GET /api/v1/settings/public/ HTTP/1.0" 200 746
+2021-04-01 15:12:14 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: 身份认证信息未提供。
+192.168.250.9 [01/Apr/2021:15:12:14 +0800] 0.010999s "GET /api/v1/users/profile/ HTTP/1.0" 401 70
+192.168.250.9 [01/Apr/2021:15:12:14 +0800] 0.043567s "GET /core/auth/login/ HTTP/1.0" 200 8511
+192.168.250.9 [01/Apr/2021:15:12:14 +0800] 0.028997s "GET /core/auth/login/ HTTP/1.0" 200 8511
+192.168.250.9 [01/Apr/2021:15:12:16 +0800] 0.022795s "GET /core/auth/captcha/image/46e297913acc4ebc69a04a30e75db010d254093d/ HTTP/1.0" 200 4656
+192.168.250.8 [01/Apr/2021:15:12:19 +0800] 0.020616s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:12:19 +0800] 0.019091s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:12:19 +0800] 0.020745s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:12:20 +0800] 0.022234s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:12:20 +0800] 0.017877s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:12:49 +0800] 0.018744s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:12:49 +0800] 0.015720s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:12:50 +0800] 0.021473s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:12:50 +0800] 0.021454s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:12:50 +0800] 0.021162s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:13:19 +0800] 0.018307s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:13:19 +0800] 0.016062s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:13:19 +0800] 0.011934s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:15:13:20 +0800] 0.012444s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:13:20 +0800] 0.015367s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:13:49 +0800] 0.014090s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:13:49 +0800] 0.014434s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:13:50 +0800] 0.024495s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:13:50 +0800] 0.013658s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:13:50 +0800] 0.015673s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:14:19 +0800] 0.022147s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:14:19 +0800] 0.017983s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:14:19 +0800] 0.016776s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:14:20 +0800] 0.018640s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:14:20 +0800] 0.013112s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:14:49 +0800] 0.013445s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:14:50 +0800] 0.015197s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:14:50 +0800] 0.017792s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:14:50 +0800] 0.016677s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:14:50 +0800] 0.018150s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:15:19 +0800] 0.017385s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:15:19 +0800] 0.017641s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:15:20 +0800] 0.015308s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:15:20 +0800] 0.012577s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:15:20 +0800] 0.016179s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:15:49 +0800] 0.016030s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:15:50 +0800] 0.012853s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:15:50 +0800] 0.017786s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:15:50 +0800] 0.013746s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:15:50 +0800] 0.013877s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:16:19 +0800] 0.015541s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:16:19 +0800] 0.017085s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:16:20 +0800] 0.023452s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:16:20 +0800] 0.017570s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:16:20 +0800] 0.017567s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:16:49 +0800] 0.018656s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:16:50 +0800] 0.012772s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:16:50 +0800] 0.025354s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:16:50 +0800] 0.015898s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:16:50 +0800] 0.012950s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:17:19 +0800] 0.018587s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:17:19 +0800] 0.018471s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:17:20 +0800] 0.014436s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:17:20 +0800] 0.018840s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:17:20 +0800] 0.013196s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:17:49 +0800] 0.016599s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:17:50 +0800] 0.014506s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:17:50 +0800] 0.021014s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:17:50 +0800] 0.014910s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:17:50 +0800] 0.017220s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:18:19 +0800] 0.016269s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:18:19 +0800] 0.016278s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:18:20 +0800] 0.019742s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:18:20 +0800] 0.016882s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:18:20 +0800] 0.020343s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:18:49 +0800] 0.012027s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:18:50 +0800] 0.014920s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:18:50 +0800] 0.018322s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:18:50 +0800] 0.011839s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:18:51 +0800] 0.016329s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:19:19 +0800] 0.018435s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:19:19 +0800] 0.017264s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:19:20 +0800] 0.014640s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:19:20 +0800] 0.016580s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:19:21 +0800] 0.012380s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:19:49 +0800] 0.023326s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:19:50 +0800] 0.012677s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.8 [01/Apr/2021:15:19:50 +0800] 0.016028s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:19:50 +0800] 0.019804s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 94
+192.168.250.6 [01/Apr/2021:15:19:51 +0800] 0.014766s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:20:19 +0800] 0.018196s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:20:19 +0800] 0.017382s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:20:20 +0800] 0.012489s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:15:20:20 +0800] 0.016226s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 94
+192.168.250.6 [01/Apr/2021:15:20:21 +0800] 0.012704s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:20:49 +0800] 0.018599s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:20:50 +0800] 0.024520s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.8 [01/Apr/2021:15:20:50 +0800] 0.021760s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:20:50 +0800] 0.012477s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 94
+192.168.250.6 [01/Apr/2021:15:20:51 +0800] 0.018938s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:21:19 +0800] 0.013862s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:21:19 +0800] 0.013387s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:21:20 +0800] 0.014742s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:21:20 +0800] 0.017108s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:21:21 +0800] 0.020017s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:21:49 +0800] 0.021000s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:21:50 +0800] 0.014041s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:21:50 +0800] 0.019246s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:21:50 +0800] 0.033243s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:21:51 +0800] 0.013503s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:22:19 +0800] 0.016209s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:22:19 +0800] 0.016358s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:22:20 +0800] 0.013863s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:22:20 +0800] 0.016629s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:22:21 +0800] 0.012704s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:22:49 +0800] 0.015527s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:22:50 +0800] 0.019298s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:22:50 +0800] 0.017907s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:22:50 +0800] 0.011123s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:22:51 +0800] 0.014015s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:23:19 +0800] 0.016608s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:23:19 +0800] 0.014223s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:23:20 +0800] 0.016684s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:23:20 +0800] 0.014006s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:23:21 +0800] 0.015051s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:23:49 +0800] 0.012700s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:23:50 +0800] 0.013253s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:23:50 +0800] 0.013720s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:23:50 +0800] 0.012908s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:23:51 +0800] 0.032917s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:24:19 +0800] 0.017093s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:24:19 +0800] 0.025631s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:24:20 +0800] 0.013122s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:24:20 +0800] 0.021387s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:24:21 +0800] 0.015561s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:24:49 +0800] 0.015106s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:24:50 +0800] 0.013314s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:24:50 +0800] 0.026256s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:24:51 +0800] 0.014832s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:24:51 +0800] 0.014225s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:25:19 +0800] 0.017731s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:25:19 +0800] 0.011291s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:25:20 +0800] 0.013810s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:25:21 +0800] 0.011882s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:25:21 +0800] 0.012519s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:25:49 +0800] 0.012165s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:25:50 +0800] 0.011760s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.8 [01/Apr/2021:15:25:50 +0800] 0.017365s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:25:51 +0800] 0.013311s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 94
+192.168.250.6 [01/Apr/2021:15:25:51 +0800] 0.015178s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:26:19 +0800] 0.015884s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:26:19 +0800] 0.011377s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:26:20 +0800] 0.012621s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:15:26:21 +0800] 0.012618s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 94
+192.168.250.6 [01/Apr/2021:15:26:21 +0800] 0.017257s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:26:49 +0800] 0.019368s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:26:50 +0800] 0.011999s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.8 [01/Apr/2021:15:26:50 +0800] 0.014105s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:26:51 +0800] 0.016914s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 94
+192.168.250.6 [01/Apr/2021:15:26:51 +0800] 0.017157s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:27:19 +0800] 0.015689s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:27:19 +0800] 0.016600s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:27:20 +0800] 0.018587s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:15:27:21 +0800] 0.014642s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 94
+192.168.250.6 [01/Apr/2021:15:27:21 +0800] 0.015492s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:27:49 +0800] 0.015302s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:27:50 +0800] 0.016425s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:27:50 +0800] 0.014567s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:27:51 +0800] 0.012108s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:27:51 +0800] 0.012332s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:28:19 +0800] 0.015289s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:28:19 +0800] 0.013939s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:28:20 +0800] 0.015316s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:15:28:21 +0800] 0.015013s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:28:21 +0800] 0.014521s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:28:49 +0800] 0.013837s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:28:50 +0800] 0.016600s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:28:50 +0800] 0.024036s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.6 [01/Apr/2021:15:28:51 +0800] 0.011330s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:28:51 +0800] 0.011676s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:29:19 +0800] 0.019117s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:29:19 +0800] 0.027016s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:29:20 +0800] 0.021924s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:29:21 +0800] 0.019255s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:29:21 +0800] 0.018352s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:29:50 +0800] 0.016100s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:29:50 +0800] 0.020910s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:29:50 +0800] 0.015967s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:15:29:51 +0800] 0.020681s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:29:51 +0800] 0.016510s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.9 [01/Apr/2021:15:30:16 +0800] 0.032220s "POST /core/auth/login/ HTTP/1.0" 200 8553
+192.168.250.9 [01/Apr/2021:15:30:18 +0800] 0.026219s "GET /core/auth/captcha/image/7838eccc46b331301bff019c822502185bb399c1/ HTTP/1.0" 200 4956
+192.168.250.6 [01/Apr/2021:15:30:19 +0800] 0.014745s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:30:20 +0800] 0.017270s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:30:20 +0800] 0.013411s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:30:21 +0800] 0.013384s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:30:21 +0800] 0.015405s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:30:50 +0800] 0.014258s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:30:50 +0800] 0.017408s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:30:50 +0800] 0.011126s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:30:51 +0800] 0.012632s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:30:51 +0800] 0.013234s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:31:19 +0800] 0.018520s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:31:20 +0800] 0.013387s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:31:20 +0800] 0.013881s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:31:21 +0800] 0.012424s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:31:21 +0800] 0.014238s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:31:50 +0800] 0.020206s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:31:50 +0800] 0.016539s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:31:50 +0800] 0.021356s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:31:51 +0800] 0.014454s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:31:51 +0800] 0.012209s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.6 [01/Apr/2021:15:32:19 +0800] 0.016194s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:32:20 +0800] 0.015848s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:32:20 +0800] 0.012771s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:15:32:21 +0800] 0.019017s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.6 [01/Apr/2021:15:32:21 +0800] 0.017142s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.9 [01/Apr/2021:15:32:43 +0800] 0.027333s "POST /core/auth/login/ HTTP/1.0" 200 8553
+192.168.250.9 [01/Apr/2021:15:32:45 +0800] 0.037409s "GET /core/auth/captcha/image/7363b655fe6f2136e0f64a202ba1fe0e405f1075/ HTTP/1.0" 200 4929
+192.168.250.8 [01/Apr/2021:15:32:50 +0800] 0.015607s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:32:50 +0800] 0.021410s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.8 [01/Apr/2021:15:32:50 +0800] 0.014885s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:32:51 +0800] 0.015168s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.6 [01/Apr/2021:15:32:51 +0800] 0.024325s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/settings/signals_handler.py", line 75, in keep_subscribe
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/orgs/signals_handler/common.py", line 50, in keep_subscribe
+    for msg in sub.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/orgs/signals_handler/common.py", line 50, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/assets/signals_handler/node_assets_mapping.py", line 77, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/orgs/signals_handler/common.py", line 50, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/assets/signals_handler/node_assets_mapping.py", line 77, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/settings/signals_handler.py", line 75, in keep_subscribe
+    for msg in sub.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/orgs/signals_handler/common.py", line 50, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/assets/signals_handler/node_assets_mapping.py", line 77, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/assets/signals_handler/node_assets_mapping.py", line 77, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/settings/signals_handler.py", line 75, in keep_subscribe
+    for msg in sub.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/settings/signals_handler.py", line 75, in keep_subscribe
+    for msg in sub.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+[2021-04-01 15:35:51 +0800] [1014] [INFO] Starting gunicorn 19.9.0
+[2021-04-01 15:35:51 +0800] [1014] [INFO] Listening at: http://0.0.0.0:8080 (1014)
+[2021-04-01 15:35:51 +0800] [1014] [INFO] Using worker: gthread
+/usr/local/lib/python3.8/os.py:1023: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  return io.open(fd, *args, **kwargs)
+[2021-04-01 15:35:51 +0800] [1016] [INFO] Booting worker with pid: 1016
+/usr/local/lib/python3.8/os.py:1023: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  return io.open(fd, *args, **kwargs)
+[2021-04-01 15:35:51 +0800] [1017] [INFO] Booting worker with pid: 1017
+/usr/local/lib/python3.8/os.py:1023: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  return io.open(fd, *args, **kwargs)
+[2021-04-01 15:35:51 +0800] [1018] [INFO] Booting worker with pid: 1018
+/usr/local/lib/python3.8/os.py:1023: RuntimeWarning: line buffering (buffering=1) isn't supported in binary mode, the default buffer size will be used
+  return io.open(fd, *args, **kwargs)
+[2021-04-01 15:35:51 +0800] [1019] [INFO] Booting worker with pid: 1019
+192.168.250.7 [01/Apr/2021:15:35:57 +0800] 0.368296s "HEAD /api/health/ HTTP/1.1" 200 33
+2021-04-01 15:35:57 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 77, in authenticate
+    return self.authenticate_credentials(
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 86, in authenticate_credentials
+    raise exceptions.AuthenticationFailed(_('Invalid signature.'))
+rest_framework.exceptions.AuthenticationFailed: Invalid signature.
+192.168.250.7 [01/Apr/2021:15:35:57 +0800] 0.370562s "GET /api/v1/users/profile/ HTTP/1.1" 401 62
+192.168.250.7 [01/Apr/2021:15:35:58 +0800] 0.210879s "POST /api/v1/terminal/terminal-registrations/ HTTP/1.1" 201 349
+192.168.250.7 [01/Apr/2021:15:35:58 +0800] 0.033334s "GET /api/v1/users/profile/ HTTP/1.1" 200 1087
+192.168.250.7 [01/Apr/2021:15:35:58 +0800] 0.038136s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.7 [01/Apr/2021:15:35:58 +0800] 0.016776s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+2021-04-01 15:35:58 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 77, in authenticate
+    return self.authenticate_credentials(
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 86, in authenticate_credentials
+    raise exceptions.AuthenticationFailed(_('Invalid signature.'))
+rest_framework.exceptions.AuthenticationFailed: Invalid signature.
+192.168.250.8 [01/Apr/2021:15:35:58 +0800] 0.358286s "GET /api/v1/users/profile/ HTTP/1.1" 401 62
+2021-04-01 15:35:58 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 77, in authenticate
+    return self.authenticate_credentials(
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 86, in authenticate_credentials
+    raise exceptions.AuthenticationFailed(_('Invalid signature.'))
+rest_framework.exceptions.AuthenticationFailed: Invalid signature.
+192.168.250.8 [01/Apr/2021:15:35:58 +0800] 0.010077s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 401 62
+2021-04-01 15:35:58 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 77, in authenticate
+    return self.authenticate_credentials(
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 86, in authenticate_credentials
+    raise exceptions.AuthenticationFailed(_('Invalid signature.'))
+rest_framework.exceptions.AuthenticationFailed: Invalid signature.
+192.168.250.8 [01/Apr/2021:15:35:58 +0800] 0.028690s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 401 62
+2021-04-01 15:35:58 [exc_handlers ERROR] 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/usr/local/lib/python3.8/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 77, in authenticate
+    return self.authenticate_credentials(
+  File "/opt/jumpserver/apps/authentication/backends/api.py", line 86, in authenticate_credentials
+    raise exceptions.AuthenticationFailed(_('Invalid signature.'))
+rest_framework.exceptions.AuthenticationFailed: Invalid signature.
+192.168.250.8 [01/Apr/2021:15:35:58 +0800] 0.017255s "POST /api/v1/terminal/components/state/ HTTP/1.1" 401 62
+192.168.250.8 [01/Apr/2021:15:35:58 +0800] 0.198431s "POST /api/v1/terminal/terminal-registrations/ HTTP/1.1" 201 383
+192.168.250.8 [01/Apr/2021:15:35:59 +0800] 0.037823s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.10 [01/Apr/2021:15:36:05 +0800] 0.252421s "POST /core/auth/login/ HTTP/1.0" 200 8553
+192.168.250.10 [01/Apr/2021:15:36:06 +0800] 0.039518s "GET /core/auth/captcha/image/a9a4718004eba3a6ed662fe0eecd6881f0333589/ HTTP/1.0" 200 4760
+192.168.250.10 [01/Apr/2021:15:36:15 +0800] 0.430194s "POST /core/auth/login/ HTTP/1.0" 302 0
+192.168.250.10 [01/Apr/2021:15:36:15 +0800] 0.214115s "GET /core/auth/password/too-simple-flash-msg/?redirect_url=%2Fcore%2Fauth%2Fpassword%2Freset%2F%3Ftoken%3DPRnCHVGRemAF57Luz9TMb3K0SZeyk1GwjZLSL8V1TjmCilqq8n HTTP/1.0" 200 3311
+192.168.250.10 [01/Apr/2021:15:36:15 +0800] 0.020555s "GET /core/jsi18n/ HTTP/1.0" 200 10444
+192.168.250.10 [01/Apr/2021:15:36:19 +0800] 0.699874s "GET /core/auth/password/reset/?token=PRnCHVGRemAF57Luz9TMb3K0SZeyk1GwjZLSL8V1TjmCilqq8n HTTP/1.0" 200 5095
+192.168.250.10 [01/Apr/2021:15:36:20 +0800] 0.010405s "GET /core/jsi18n/ HTTP/1.0" 200 10444
+192.168.250.7 [01/Apr/2021:15:36:28 +0800] 0.016965s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.7 [01/Apr/2021:15:36:28 +0800] 0.020472s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.8 [01/Apr/2021:15:36:28 +0800] 0.022331s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:36:28 +0800] 0.013021s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+192.168.250.10 [01/Apr/2021:15:36:33 +0800] 0.331868s "POST /core/auth/password/reset/?token=PRnCHVGRemAF57Luz9TMb3K0SZeyk1GwjZLSL8V1TjmCilqq8n HTTP/1.0" 302 0
+192.168.250.10 [01/Apr/2021:15:36:33 +0800] 0.034591s "GET /core/auth/password/reset/success/ HTTP/1.0" 200 3166
+192.168.250.10 [01/Apr/2021:15:36:33 +0800] 0.012912s "GET /core/jsi18n/ HTTP/1.0" 200 10444
+192.168.250.10 [01/Apr/2021:15:36:37 +0800] 0.414490s "GET /core/auth/login/ HTTP/1.0" 200 8511
+192.168.250.10 [01/Apr/2021:15:36:38 +0800] 0.037780s "GET /core/auth/captcha/image/cea458da049de0326dc38991201bf41cae9797f0/ HTTP/1.0" 200 4859
+192.168.250.10 [01/Apr/2021:15:36:46 +0800] 0.317063s "POST /core/auth/login/ HTTP/1.0" 302 0
+192.168.250.10 [01/Apr/2021:15:36:46 +0800] 0.039558s "GET /core/auth/login/guard/ HTTP/1.0" 302 0
+192.168.250.10 [01/Apr/2021:15:36:49 +0800] 0.013506s "GET /api/v1/settings/public/ HTTP/1.0" 200 746
+192.168.250.10 [01/Apr/2021:15:36:49 +0800] 0.045130s "GET /api/v1/users/profile/ HTTP/1.0" 200 1321
+192.168.250.10 [01/Apr/2021:15:36:49 +0800] 0.015523s "GET /api/v1/orgs/orgs/current/ HTTP/1.0" 200 109
+192.168.250.10 [01/Apr/2021:15:36:50 +0800] 0.014135s "GET /api/v1/orgs/orgs/current/?oid=00000000-0000-0000-0000-000000000002 HTTP/1.0" 200 109
+192.168.250.10 [01/Apr/2021:15:36:53 +0800] 0.017802s "GET /api/v1/settings/public/ HTTP/1.0" 200 746
+192.168.250.10 [01/Apr/2021:15:36:53 +0800] 0.041557s "GET /api/v1/users/profile/ HTTP/1.0" 200 1321
+192.168.250.10 [01/Apr/2021:15:36:53 +0800] 0.022795s "GET /api/v1/orgs/orgs/current/ HTTP/1.0" 200 109
+192.168.250.10 [01/Apr/2021:15:36:54 +0800] 0.028202s "GET /api/v1/index/?total_count=1 HTTP/1.0" 200 114
+192.168.250.10 [01/Apr/2021:15:36:54 +0800] 0.019776s "GET /api/v1/index/?dates_login_times_top10_users=1 HTTP/1.0" 200 37
+192.168.250.10 [01/Apr/2021:15:36:54 +0800] 0.017977s "GET /api/v1/index/?dates_login_times_top10_assets=1 HTTP/1.0" 200 38
+192.168.250.10 [01/Apr/2021:15:36:54 +0800] 0.036333s "GET /api/v1/index/?dates_total_count_users=1&dates_total_count_assets=1 HTTP/1.0" 200 233
+192.168.250.10 [01/Apr/2021:15:36:54 +0800] 0.020000s "GET /api/v1/index/?dates_login_record_top10_sessions=1 HTTP/1.0" 200 41
+192.168.250.10 [01/Apr/2021:15:36:55 +0800] 0.105289s "GET /api/v1/index/?dates_metrics=1& HTTP/1.0" 200 276
+192.168.250.10 [01/Apr/2021:15:36:57 +0800] 0.017768s "GET /api/v1/settings/public/ HTTP/1.0" 200 746
+192.168.250.10 [01/Apr/2021:15:36:57 +0800] 0.048160s "GET /api/v1/users/profile/ HTTP/1.0" 200 1321
+192.168.250.10 [01/Apr/2021:15:36:57 +0800] 0.017401s "GET /api/v1/orgs/orgs/current/ HTTP/1.0" 200 109
+192.168.250.7 [01/Apr/2021:15:36:58 +0800] 0.013811s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.7 [01/Apr/2021:15:36:58 +0800] 0.012638s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.7 [01/Apr/2021:15:36:58 +0800] 0.012461s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:36:58 +0800] 0.013540s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:36:58 +0800] 0.021792s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.10 [01/Apr/2021:15:36:58 +0800] 0.025699s "GET /api/v1/index/?total_count=1 HTTP/1.0" 200 114
+192.168.250.10 [01/Apr/2021:15:36:58 +0800] 0.022003s "GET /api/v1/index/?dates_login_times_top10_users=1 HTTP/1.0" 200 37
+192.168.250.10 [01/Apr/2021:15:36:58 +0800] 0.043097s "GET /api/v1/index/?dates_total_count_users=1&dates_total_count_assets=1 HTTP/1.0" 200 233
+192.168.250.10 [01/Apr/2021:15:36:58 +0800] 0.037237s "GET /api/v1/index/?dates_login_times_top10_assets=1 HTTP/1.0" 200 38
+192.168.250.10 [01/Apr/2021:15:36:58 +0800] 0.061893s "GET /api/v1/index/?dates_metrics=1& HTTP/1.0" 200 276
+192.168.250.10 [01/Apr/2021:15:36:58 +0800] 0.018144s "GET /api/v1/index/?dates_login_record_top10_sessions=1 HTTP/1.0" 200 41
+192.168.250.8 [01/Apr/2021:15:36:59 +0800] 0.014432s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.10 [01/Apr/2021:15:37:01 +0800] 0.047135s "OPTIONS /api/v1/users/users/?draw=1&display=1 HTTP/1.0" 200 15817
+192.168.250.10 [01/Apr/2021:15:37:01 +0800] 0.046608s "OPTIONS /api/v1/users/users/?draw=1&display=1 HTTP/1.0" 200 15817
+192.168.250.10 [01/Apr/2021:15:37:01 +0800] 0.047993s "GET /api/v1/users/users/?offset=0&limit=15&display=1&draw=1 HTTP/1.0" 200 940
+192.168.250.10 [01/Apr/2021:15:37:04 +0800] 0.059727s "OPTIONS /api/v1/users/users/ HTTP/1.0" 200 15817
+192.168.250.10 [01/Apr/2021:15:37:05 +0800] 0.037000s "GET /api/v1/users/groups/?search=&offset=0&limit=10 HTTP/1.0" 200 321
+192.168.250.10 [01/Apr/2021:15:37:09 +0800] 0.051063s "OPTIONS /api/v1/users/groups/?draw=1&display=1 HTTP/1.0" 200 3032
+192.168.250.10 [01/Apr/2021:15:37:09 +0800] 0.049660s "OPTIONS /api/v1/users/groups/?draw=1&display=1 HTTP/1.0" 200 3032
+192.168.250.10 [01/Apr/2021:15:37:09 +0800] 0.029361s "GET /api/v1/users/groups/?offset=0&limit=15&display=1&draw=1 HTTP/1.0" 200 321
+192.168.250.10 [01/Apr/2021:15:37:10 +0800] 0.043311s "GET /api/v1/users/users/?offset=0&limit=15&display=1&draw=1 HTTP/1.0" 200 940
+192.168.250.10 [01/Apr/2021:15:37:20 +0800] 0.040744s "GET /api/v1/users/groups/?offset=0&limit=15&display=1&draw=1 HTTP/1.0" 200 321
+192.168.250.10 [01/Apr/2021:15:37:22 +0800] 0.044368s "GET /api/v1/users/users/?offset=0&limit=15&display=1&draw=1 HTTP/1.0" 200 940
+192.168.250.7 [01/Apr/2021:15:37:28 +0800] 0.016267s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.7 [01/Apr/2021:15:37:28 +0800] 0.017815s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.8 [01/Apr/2021:15:37:28 +0800] 0.014360s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 201 2
+192.168.250.8 [01/Apr/2021:15:37:28 +0800] 0.020102s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 119
+192.168.250.10 [01/Apr/2021:15:37:37 +0800] 0.027851s "GET /api/v1/users/groups/?offset=0&limit=15&display=1&draw=1 HTTP/1.0" 200 321
+192.168.250.10 [01/Apr/2021:15:37:40 +0800] 0.043751s "GET /api/v1/users/users/?offset=0&limit=15&display=1&draw=1 HTTP/1.0" 200 940
+192.168.250.7 [01/Apr/2021:15:37:58 +0800] 0.014083s "GET /api/v1/terminal/terminals/config/ HTTP/1.1" 200 2115
+192.168.250.7 [01/Apr/2021:15:37:58 +0800] 0.022721s "POST /api/v1/terminal/terminals/status/ HTTP/1.1" 201 2
+192.168.250.7 [01/Apr/2021:15:37:58 +0800] 0.012183s "POST /api/v1/terminal/components/state/ HTTP/1.1" 201 118
+2021-04-01 15:37:58 [log ERROR] Internal Server Error: /api/v1/terminal/terminals/status/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/__init__.py", line 130, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2002, "Can't connect to MySQL server on 'mysql' (115)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/jumpserver/apps/orgs/middleware.py", line 35, in __call__
+    org = get_org_from_request(request)
+  File "/opt/jumpserver/apps/orgs/utils.py", line 33, in get_org_from_request
+    org = Organization.get_instance(oid, default=Organization.default())
+  File "/opt/jumpserver/apps/orgs/models.py", line 191, in default
+    obj, created = cls.objects.get_or_create(defaults=defaults, id=cls.DEFAULT_ID)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 573, in get_or_create
+    return self.get(**kwargs), False
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 425, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 269, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1303, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/__init__.py", line 130, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to MySQL server on 'mysql' (115)")
+192.168.250.8 [01/Apr/2021:15:37:58 +0800] 0.008978s "POST /api/v1/terminal/terminals/status/?from_guacamole=1 HTTP/1.1" 500 34
+2021-04-01 15:37:58 [log ERROR] Internal Server Error: /api/v1/terminal/components/state/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/__init__.py", line 130, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2002, "Can't connect to MySQL server on 'mysql' (115)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/jumpserver/apps/orgs/middleware.py", line 35, in __call__
+    org = get_org_from_request(request)
+  File "/opt/jumpserver/apps/orgs/utils.py", line 33, in get_org_from_request
+    org = Organization.get_instance(oid, default=Organization.default())
+  File "/opt/jumpserver/apps/orgs/models.py", line 191, in default
+    obj, created = cls.objects.get_or_create(defaults=defaults, id=cls.DEFAULT_ID)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 573, in get_or_create
+    return self.get(**kwargs), False
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 425, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 269, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 1303, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 234, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/__init__.py", line 130, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to MySQL server on 'mysql' (115)")
+192.168.250.8 [01/Apr/2021:15:37:58 +0800] 0.008162s "POST /api/v1/terminal/components/state/ HTTP/1.1" 500 34
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/orgs/signals_handler/common.py", line 50, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/assets/signals_handler/node_assets_mapping.py", line 77, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/settings/signals_handler.py", line 75, in keep_subscribe
+    for msg in sub.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/assets/signals_handler/node_assets_mapping.py", line 77, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/settings/signals_handler.py", line 75, in keep_subscribe
+    for msg in sub.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/orgs/signals_handler/common.py", line 50, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/settings/signals_handler.py", line 75, in keep_subscribe
+    for msg in sub.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/assets/signals_handler/node_assets_mapping.py", line 77, in keep_subscribe
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/assets/signals_handler/node_assets_mapping.py", line 77, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/orgs/signals_handler/common.py", line 50, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/settings/signals_handler.py", line 75, in keep_subscribe
+    for msg in sub.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/jumpserver/apps/orgs/signals_handler/common.py", line 50, in keep_subscribe
+    for message in subscribe.listen():
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3605, in listen
+    response = self.handle_message(self.parse_response(block=True))
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3505, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 3479, in _execute
+    return command(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
